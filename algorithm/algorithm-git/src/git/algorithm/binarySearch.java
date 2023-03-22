@@ -5,13 +5,6 @@ public class binarySearch {
         int left = 0;
         int right = arr.length - 1;
         //初始以数组最两端为界
-        if(target > arr[right]){
-            return right + 1;
-        }
-        if(target < arr[left]){
-            return 0;
-        }
-        //比较两种特殊情况，即target最大或者最小
         while(left <= right){
             int mid = left + (right - left) / 2;
             int num = arr[mid];
